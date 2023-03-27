@@ -8,7 +8,7 @@ export const FeedbackOptions = ({ options, onClick }) => (
       <StyledButton
         type="button"
         name={option}
-        onClick={e => onClick(e)}
+        onClick={e => onClick(e.target.name)}
         key={option}
       >
         {option}
